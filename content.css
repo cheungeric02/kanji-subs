@@ -1,0 +1,32 @@
+#ks-overlay {
+  position: absolute;
+  left: 50%;
+  bottom: 9%;
+  transform: translateX(-50%);
+  max-width: 92%;
+  z-index: 70;
+  text-align: center;
+  color: #fff;
+  background: rgba(8, 8, 8, 0.78);
+  padding: 0.15em 0.6em 0.3em;
+  border-radius: 6px;
+  line-height: 2;
+  font-family: "Noto Sans JP", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: text;
+  pointer-events: auto;
+}
+#ks-overlay .ks-line { white-space: pre-wrap; }
+#ks-overlay .ks-w { border-radius: 3px; }
+#ks-overlay .ks-w:hover { background: rgba(255, 214, 102, 0.3); }
+#ks-overlay rt {
+  font-size: 0.45em;
+  color: #ffd666;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.ks-active .ytp-caption-window-container {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

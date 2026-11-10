@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Kanji Subs",
+  "version": "0.1.0",
+  "description": "Shows Japanese YouTube captions as clear kanji text with furigana. Works with Yomitan for lookups.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["lib/kuromoji.js", "furigana.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    { "resources": ["dict/*"], "matches": ["https://www.youtube.com/*"] }
+  ],
+  "action": { "default_title": "Kanji Subs", "default_popup": "popup.html" }
+}
